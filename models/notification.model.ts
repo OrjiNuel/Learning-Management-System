@@ -2,7 +2,7 @@ import mongoose, { Document, Model, Schema } from "mongoose";
 
 interface INotification extends Document {
   title: string;
-  mesaage: string;
+  message: string;
   status: string;
   userId: string;
 }
@@ -13,7 +13,7 @@ const notificationSchema = new Schema<INotification>(
       type: String,
       required: true,
     },
-    mesaage: {
+    message: {
       type: String,
       required: true,
     },
